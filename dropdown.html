@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+
+        <style>
+        *{
+            margin:30px;
+            padding: 0;
+            font-family: 'poppins';
+            
+        }
+        ul{
+            list-style: none;
+            background-color: rgb(198, 232, 232);
+          
+           
+
+           
+
+        }
+        ul li{
+            display: inline-block;
+            position: relative;
+          
+            
+            
+        }
+        ul li a{
+            display: block;
+            padding: 20px 25px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+            
+}
+ul li .dropdown{
+    width: 100%;
+    position: absolute;
+ display: none;
+}
+ul li .dropdown li{
+    display: block;
+}
+
+ul li:hover  ul.dropdown{
+    display: block;
+    padding-left: 10px;
+      border-left: 2px solid #3ca0e7;
+      transition: all 0.3s ease;
+    
+}
+a{
+    border-left: 2px solid #110485;
+    
+}
+
+        
+
+       
+    </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">work</a>
+                    <ul class="dropdown">
+                        <li><a href="#"> 1</a></li>
+                        <li><a href="#"> 2</a></li>
+                        <li><a href="#"> 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">AAAA</a></li>
+                <li><a href="#">BBBB</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

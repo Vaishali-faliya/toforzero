@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .horizontal ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #336369;
+ 
+}
+
+
+
+ .horizontal li a {
+  display: block;
+  color:white;
+  padding:20px;
+  text-decoration: none;
+  font-size: 30px;
+  float:right;
+  
+ 
+}
+.horizontal .logo{
+width: 150px;
+padding: 20px;
+float: left;
+}
+ .horizontal .navbar-logo{
+    width: 90px;
+    height: 90px;
+ display: none;
+    }
+    button{
+      float: right;
+      background-color: transparent;
+      border: transparent;
+    }
+
+@media screen and (max-width:800px) {
+ .horizontal li a {
+  display:none;
+
+  }
+ .horizontal .navbar-logo{
+    display: block;
+}
+}
+
+.vertical ul{
+  list-style-type: none;
+  border: 1px solid white;
+  width: 200px;
+  background-color: #336369;
+  
+}
+.vertical li a{
+  text-decoration: none;
+  color: aliceblue;
+  padding: 20px;
+  line-height: 80px;
+  font-size: 30px;
+
+  
+}
+.vertical li{
+  border-bottom: 1px solid white;
+  width: 150px;
+  padding: 20px auto;
+}
+.vertical ul :hover{
+  background-color: #285e65;
+  color: white;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="horizontal">
+        
+        <ul>
+          
+           <button>
+            <img src="./navbar.png" alt="" class="navbar-logo">
+           </button>
+            <li class="logo"><img src="./logo.png" alt=""></li>
+            <li><a class="active" href="#home">About</a></li>
+            <li><a href="#news">Contact</a></li>
+            <li><a href="#contact">News</a></li>
+            <li><a href="#about">Home</a></li>
+            
+          </ul>
+          
+    </div>
+    <div class="vertical">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">Blog</a></li
+      </ul>
+    </div>
+    
+</body>
+</html>
