@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Basic styles */
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    p {
+        margin: 20px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+    }
+    /* Pseudo-elements */
+    
+    p::first-line {
+        /* Style the first line */
+        color: blue;
+    }
+    
+    p::first-letter {
+        /* Style the first letter */
+        color: red;
+    }
+    
+    p::before {
+        content: "Note: ";
+        /* Add content before the paragraph */
+        color: green;
+    }
+    
+    p::after {
+        content: " — End of paragraph.";
+        /* Add content after the paragraph */
+        font-style: italic;
+    }
+    
+    .highlight::selection {
+        background: yellow;
+        /* Style the selected text */
+    }
+</style>
+
+
+<body>
+    <h1>CSS Pseudo-Elements Example</h1>
+
+    <p>This is an example paragraph. The first letter and the first line have special styles . This is an example paragraph. The first letter and the first line have special styles >This is an example paragraph. The first letter and the first line have special
+        styles . This is an example paragraph. The first letter and the first line have special style
+    </p>
+    <p class="highlight">Select some of this text to see the selection effect.</p>
+    <p>This is another paragraph to demonstrate the use of pseudo-elements.</p>
+
+
+</body>
+
+</html>

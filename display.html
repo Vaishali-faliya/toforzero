@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Display Properties Example</title>
+    <style>
+        .block {
+            display: block;
+            background-color: lightblue;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        
+        .inline {
+            display: inline;
+            background-color: lightgreen;
+            margin: 10px;
+            padding: 5px;
+        }
+        
+        .inline-block {
+            display: inline-block;
+            background-color: lightcoral;
+            margin: 10px;
+            padding: 5px;
+        }
+        
+        .flex {
+            display: flex;
+            background-color: lightyellow;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            background-color: lightpink;
+            padding: 10px;
+        }
+        
+        .none {
+            display: none;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Display Properties Example</h2>
+
+    <div class="block">This is a block element (display: block).</div>
+
+    <span class="inline">This is an inline element (display: inline).</span>
+    <span class="inline">Another inline element.</span>
+
+    <div class="inline-block">This is an inline-block element (display: inline-block).</div>
+    <div class="inline-block">Another inline-block element.</div>
+
+    <div class="flex">
+        <div>Flex Item 1</div>
+        <div>Flex Item 2</div>
+        <div>Flex Item 3</div>
+    </div>
+
+    <div class="grid">
+        <div>Grid Item 1</div>
+        <div>Grid Item 2</div>
+        <div>Grid Item 3</div>
+        <div>Grid Item 4</div>
+    </div>
+
+    <div class="none">This text will not be displayed (display: none).</div>
+
+</body>
+
+</html>

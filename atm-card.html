@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./back\ img.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            height: 700px;
+            background-color: aliceblue;
+        }
+        .card{
+            width: 300px;
+            height: 180px;
+            position: relative;
+            background-color: rgb(73, 124, 170);
+            box-shadow: 0 10px 20px rgb(127, 124, 124);
+            border-radius:10px;
+            transform-style: preserve-3d;
+         transition: transform 1s linear;
+        }
+        .card:hover{
+            transform: rotateY(180deg);
+        }
+        .front{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(195, 167, 167);
+            position: absolute;
+            border-radius: 10px;
+        }
+        .back{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(46, 9, 125);
+            position: absolute;
+            backface-visibility: hidden; 
+            border-radius: 10px;
+            transform: rotateY(180deg); 
+        }
+img{
+    width: 200%;
+    height: 182%;
+    position: relative;
+    bottom:69px;
+    right: 140px;
+   
+}
+
+    </style>
+    </head>
+    <body>
+        
+            <div class="card">
+                <div class="front"><img src="./card-front.png"
+                        alt="atm-card"></div>
+                <div class="back"></div>
+            </div>
+       
+    </body>
+</html>

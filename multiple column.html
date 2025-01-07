@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* General Styling */
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section {
+    background-color: #e0f7fa;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Multi-Column Base Styles */
+.multi-column {
+    background-color: #ffffff;
+    padding: 20px;
+    column-gap: 20px; 
+}
+
+.multi-column p {
+    margin-bottom: 15px;
+}
+
+/* column-gap */
+.column-gap .multi-column {
+    column-gap: 20px;
+}
+/*  column-count */
+.column-count .multi-column {
+    column-count:4; 
+}
+
+/* column-width */
+.column-width .multi-column {
+    column-width: 150px; 
+}
+/* column-rule */
+.column-rule .multi-column {
+    column-rule: 2px solid #4caf50; 
+}
+
+/*column-span */
+.column-span .multi-column  {
+    column-span: all; 
+}
+    </style>
+    </head>
+    <body>
+        <h1>Multiple Column</h1>
+
+        <!-- column-gap -->
+        <section class="column-gap">
+            <h2>Column Gap</h2>
+            <div class="multi-column">
+                <p>This is a demonstration of the <strong>column-gap</strong>
+                    property. The gap between columns is set to 20px.</p>
+                <p>Adjusting the gap changes the space between columns. This is
+                    useful when creating multi-column layouts.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: column-count -->
+        <section class="column-count">
+            <h2>Column Count</h2>
+            <div class="multi-column">
+                <p>This is a demonstration of the <strong>column-count</strong>
+                    property. The text is split into 3 columns.
+
+                    Changing the value of column-count will control how many
+                        columns the text will be split intoChanging the value of
+                        column-count will control how many columns the text will
+                        be split into.</p>
+                </div>
+            </section>
+
+            <!-- Section 3: column-width -->
+            <section class="column-width">
+                <h2>Column Width</h2>
+                <div class="multi-column">
+                    <p>This is a demonstration of the
+                        <strong>column-width</strong> property. The columns have
+                        a minimum width of 150px.</p>
+                    <p>With column-width, the content will automatically adjust
+                        into as many columns as needed, based on the given
+                        width.</p>
+                </div>
+            </section>
+
+            <!-- Section 4: column-rule -->
+            <section class="column-rule">
+                <h2>Column Rule</h2>
+                <div class="multi-column">
+                    <p>This is a demonstration of the
+                        <strong>column-rule</strong> property. A rule (or
+                        border) is placed between columns.</p>
+                    <p>The rule's color, width, and style can be customized for
+                        visual separation between columns.</p>
+                </div>
+            </section>
+
+            <!-- Section 5: column-span -->
+            <section class="column-span">
+                <h2>Column Span</h2>
+                <div class="multi-column">
+                    <p>This is a demonstration of the
+                        <strong>column-span</strong> property. The heading below
+                        spans across all columns.</p>
+                    <p><strong>This heading spans across all
+                            columns.</strong></p>
+                    <p>Column-span can be used to make a single element span
+                        across multiple columns.</p>
+                </div>
+            </section>
+
+        </body>
+    </html>

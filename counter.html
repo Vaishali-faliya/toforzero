@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+        
+      .outer {
+    counter-reset: outer-counter; 
+}
+
+.outer > h1 {
+    counter-increment: outer-counter; 
+   
+}
+
+.outer > h1::before {
+    content: counter(outer-counter) ". "; 
+   
+   
+}
+
+.inner {
+    counter-reset: inner-counter; 
+}
+
+.inner > h2 {
+    counter-increment: inner-counter;
+   
+}
+
+.inner > h2::before {
+    content: counter(outer-counter) "." counter(inner-counter) " "; 
+}
+
+.sub-inner {
+    counter-reset: sub-inner-counter; 
+}
+
+.sub-inner > h3 {
+    counter-increment: sub-inner-counter; 
+   
+}
+
+.sub-inner > h3::before {
+    content: counter(outer-counter) "." counter(inner-counter) "." counter(sub-inner-counter) " "; 
+}
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <h1>Item 1</h1>
+        <div class="inner">
+            <h2>Sub-item 1</h2>
+            <div class="sub-inner">
+                <h3>Sub-sub-item 1</h3>
+                <h3>Sub-sub-item 2</h3>
+            </div>
+            <h2>Sub-item 2</h2>
+        </div>
+        <h1>Item 2</h1>
+    </div>
+</body>
+</html>

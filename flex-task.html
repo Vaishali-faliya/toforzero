@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+    <title>Document</title>
+    <style>
+    *{
+      margin: 0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    body{
+   background-color: hsl(0, 11%, 96%);
+   font-family: poppins;
+    }
+    h1 ,h3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      color: rgb(87, 87, 88);
+      font-size: 40px;
+    
+      }
+      h3{
+        height: 100px;
+        font-size: 40px;
+      
+    }
+    .connected-underline {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.connected-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjusts the position of the underline */
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: rgb(215, 176, 66); /* Color of the underline */
+    padding:1px;}
+span{
+ padding: 2px;
+}
+.navbar ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-content: space-around;
+  background-color: aliceblue;
+  padding: 20px 10px 20px 10px;
+ margin: 0 100px 0 100px;
+}
+li{
+  display: flex;
+ padding: 20px;
+  font-size: 20px;
+text-decoration: none important;
+
+}
+a{
+text-decoration: none;
+color: black;
+}
+.button{
+  border-radius: 10px;
+border: 1px solid black;
+  }
+  .logo{
+    display: flex;
+  align-self:flex-start;
+  }
+  </style>
+  </head>
+  <body>
+    
+    
+    <h3>Poseido<span class="connected-underline">n</span><span class="connected-underline">Wi</span>reframe</h3>
+    <h1>MENU</h1>
+    <div class="navbar">
+      <ul>
+        <li><img src="./navbar logo.png" alt="" class="logo" style=" align-self:flex-start;"></li> 
+         <li><a href="#">HOME</a></li>
+         <li><a href="#">PRODUCTS</a></li>
+         <li><a href="#">ABOUT US</a></li>
+         <li><a href="#">CONTACTS</a></li>
+         <button class="button">button</button>
+       </ul>
+    </div>
+    <ul>
+     <li><img src="./navbar logo.png" alt="" class="logo"></li> 
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">PRODUCTS</a></li>
+      <li><a href="#">ABOUT US</a></li>
+      <li><a href="#">CONTACTS</a></li>
+      <button class="button">button</button>
+    </ul>
+   
+  </body>
+</html>

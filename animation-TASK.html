@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+            background: #F5F3F4;
+        
+        }
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: #968e8e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    animation: simple-box 5s infinite;
+  }
+@keyframes simple-box {
+    0%{
+        left: 0%;
+        bottom: 0%;
+    }
+    50%{
+        left: 50%;
+        bottom: 100%;
+    }
+    100%{
+        left: 50%;
+        bottom: 0%;
+    }
+    
+}        
+
+            
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>
