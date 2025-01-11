@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial
+}
+body,html{
+    height:100%;
+    width:100%;
+}
+header{
+    width:100%;
+    height:80%;
+    background-color: #f1f1f1;
+}
