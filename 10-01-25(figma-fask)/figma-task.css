@@ -12,7 +12,7 @@ body {
   
 }
 header {
-  padding: 60px 140px;
+  padding: 80px 140px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,8 +20,10 @@ header {
   height: 70px;
 }
 .logo img {
+  display:flex;
+  text-align: center;
   width: 200px;
-  float:left;
+ 
 }
 header ul {
   display: flex;
@@ -46,43 +48,47 @@ header ul li a:hover {
   color: rgba(0, 0, 0, 1);
   font-size: 60px;
 }
-.nav-link {
+.header-link {
   list-style: none;
   display: flex;
   gap: 20px;
 }
-.nav-link li {
+.header-link li {
   margin-left: 40px;
 }
-.nav-link a {
+.header-link a {
   color: black;
   text-decoration: none;
 }
-.nav-link button {
+.header-link button {
   border-radius: 10px;
   background: #ff6600;
   padding: 10px 20px;
   border: none;
   font-size: 16px;
 }
+
 #checkbtn {
-  float:right;
+ transition:.5s;
   margin-left: 20px;
   font-size: 30px;
   display: none;
 }
 #check {
   display: none;
+  float: right;
+  transition:.5s;
+  
+
+}
+.nav-section {
+  display: grid;
+  grid-template-columns: auto auto ;
+  padding:50px 140px;
 }
 
-nav .nav-section{
-  display:flex;
- flex-direction:column;
- padding:50px 140px;
- 
-}
 .nav-section h1{
-  font-size: 60px;
+  font-size: 50px;
  color: rgba(11, 27, 53, 1);
  line-height:80px;
 }
@@ -113,15 +119,75 @@ border-radius:10px;
   display:flex;
  flex-direction:column;
  float:right; 
+  object-fit: contain;
  position:absolute;
  right:0;
- top:15%;
-  
-  
+ top:100px;
+  }
+  .about-section{
+text-align:center;
+padding:0px 140px;
+
+  }
+  .about-content p{
+color: rgba(138, 137, 142, 1);
+font-size: 14px;
+font-weight: 800px;
+line-height: 28.5px;
+letter-spacing: 0.45em;
+}
+ .about-content h1{
+ color: rgba(11, 27, 53, 1);
+font-size: 52px;
+font-weight: 700;
+line-height:100px;
+}
+.about-card{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+
+}
+
+.about-card div {
+  border:1px solid black;
+  padding: 30px;
+  text-align: center;
+border-radius:28px;
+box-shadow: 0px 2.77px 2.21px 0px rgba(0, 0, 0, 0.0197);
+
+
+} 
+
+.about-card h1{
+  color: rgba(0, 0, 0, 1);
+font-size: 36px;
+
+line-height: 90px;
+text-align: center;
+}
+.about-card p{
+  font-size: 18px;
+font-weight: 400;
+line-height: 28.5px;
+text-align: center;
+color: rgba(0, 0, 0, 1);
+}
+.about-card button{
+  padding:15px 30px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(255, 102, 0, 1);
+  margin-top:60px;
+border:none;
+border-radius:10px;
 }
 @media (max-width: 1074px) {
+  body{
+    text-align:center;
+  }
   header {
-    padding: 30px 100px;
+ padding: 60px 100px;
     
   }
   header ul {
@@ -142,45 +208,69 @@ border-radius:10px;
     display: block;
   }
   .menuList {
-    transition: all 0.5s;
-    background-color:w;
+    width: 100%;
+    height:100vh;
+   background: rgba(255, 102, 0, 1);
+    font-size:100px;
+    position: fixed;
+    top: 90px;
+    left:0%;
+    z-index:1;
+    }
+    .menuList li{
+      display: block;
+      text-align:center;
+      weight:600px;
+    
+    }
+    .nav-img img{
+      top:40%;
+      width:100%;
+object-fit: contain;
     }
   #checkbtn {
     display: block;
+    float: right;
+   
   }
  #check:checked ~.menuList {
 display:none;
+left:0;
 }
 
   .logo img {
     width: 200px;
-    
-  }
-  .nav-link {
+    z-index:2;
+    }
+  .header-link {
     display: none;
   }
-  .nav-section .nav-img img{
-    top: 50%;
-    left: 200px;
+  .nav-section {
+   grid-template-columns:auto;
+  
+}
+  .nav-section .nav-content{
+    position:absolute;
+    top:80%; 
+    left:6%;
+    text-align:center;
   }
-
+.about-section {
+  display:none;
+}
 }
 @media (max-width: 990px) {
-  nav .nav-section{
+  /* /* nav .nav-section{
     padding:80px 200px;
-  }
-  .nav-section .nav-img img{
-    top: 80%;
-    left: 70px;
-  }
+  } */
+  
   .nav-section h1{
   font-size: 50px;
- 
- line-height:60px;
+ line-height:80px;
 }
 .nav-section p{
   font-size:20px;
- 
- line-height:30px;
+ line-height:30px; */
 }
+
 }
