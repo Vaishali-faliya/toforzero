@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #example1 {
+            border: 10px dotted black;
+            padding: 15px;
+            background: lightblue;
+            background-clip: border-box;
+        }
+        
+        #example2 {
+            border: 10px dotted black;
+            padding: 15px;
+            background: lightblue;
+            background-clip: padding-box;
+        }
+        
+        #example3 {
+            border: 10px dotted black;
+            padding: 15px;
+            background: lightblue;
+            background-clip: content-box;
+        }
+        
+        #class1 {
+            border: 10px dashed black;
+            padding: 25px;
+            background: url(./background.jpg);
+            background-repeat: no-repeat;
+            background-origin: padding-box;
+        }
+        
+        #class2 {
+            border: 10px dashed black;
+            padding: 25px;
+            background: url(./background.jpg);
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+        
+        #class3 {
+            border: 10px dashed black;
+            padding: 25px;
+            background: url(./background.jpg);
+            background-repeat: no-repeat;
+            background-origin: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>The background-clip Property</h1>
+
+        <p>The background-clip property defines how far the background should extend within an element.</p>
+
+        <p>background-clip: border-box (this is default):</p>
+        <div id="example1">
+            <p>The background extends behind the border.</p>
+        </div>
+
+        <p>background-clip: padding-box:</p>
+        <div id="example2">
+            <p>The background extends to the inside edge of the border.</p>
+        </div>
+
+        <p>background-clip: content-box:</p>
+        <div id="example3">
+            <p>The background extends to the edge of the content box.</p>
+        </div>
+    </div>
+    <div>
+        <h2>background-origin: padding-box (default):</h2>
+        <div id="class1">
+            <h2>Hello World</h2>
+            <p>The background image starts from the upper left corner of the padding edge.</p>
+        </div>
+
+        <h2>background-origin: border-box:</h2>
+        <div id="class2">
+            <h2>Hello World</h2>
+            <p>The background image starts from the upper left corner of the border.</p>
+        </div>
+
+        <h2>background-origin: content-box:</h2>
+        <div id="class3">
+            <h2>Hello World</h2>
+            <p>The background image starts from the upper left corner of the content.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

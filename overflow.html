@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: 100px;
+           position: absolute;
+           
+           justify-content: space-between;
+         
+          
+        }
+        .box1{
+           overflow: hidden;
+            top: 200px;
+left: 300px;
+ 
+
+
+        }
+        .box2{
+           overflow:scroll ;
+            top: 200px;
+            left: 800px;
+        }
+        .box3{
+           overflow: visible;
+            top: 400px;
+            left:300px;
+        }
+        .box4{
+           overflow: auto; 
+            top: 400px;
+            left: 800px;
+        }
+        .box5{
+           overflow-x:scroll;
+           overflow-y: hidden; 
+            top: 600px;
+            left: 600px;
+        }
+        p{
+            padding: 20px;
+            background-color: aqua;
+            border: 1px solid black;;
+        }
+        h1{
+            text-align: center;
+           }
+           b{
+            font-size: 30px;
+           }
+    </style>
+</head>
+<body>
+    <h1>OVERFLOW</h1>
+<div class="box1">
+    <p><b>hidden :</b>You can also change the overflow of content horizontally or verticallyYou can also change the overflow of content horizontally or verticallyYou can also change the overflow of content horizontally or vertically</p>
+
+</div>
+
+<div class="box2"><p><b>scroll :</b>You can also change the overflow of content horizontally or verticallyYou can also change the overflow of content horizontally or verticallyYou can also change the overflow of content horizontally or vertically</p></div>
+
+<div class="box3"><p><b>visible :</b>You can also change the overflow of content horizontally or verticallyYou can also change the overflow of content horizontally or verticallyYou can also change the overflow of content horizontally or vertically</p></div>
+
+<div class="box4"><p><b>auto :</b>You can also change the overflow of content horizontally or verticallyYou can also change the overflow of content horizontally or verticallyYou can also change the overflow of content horizontally or vertically</p></div>
+<div class="box5"><p><b>X-scroll, Y-hidden :</b>You can also change the overflow of content horizontally or verticallyYou can also change the overflow of content horizontally or verticallyYou can also change the overflow of content horizontally or vertically</p></div>
+
+    
+</body>
+</html>
